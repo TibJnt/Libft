@@ -6,7 +6,7 @@
 /*   By: tjeunet <tjeunet@student.42barcelo>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 15:08:02 by tjeunet           #+#    #+#             */
-/*   Updated: 2022/09/28 12:58:19 by tjeunet          ###   ########.fr       */
+/*   Updated: 2023/03/21 16:20:48 by tjeunet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,4 +65,18 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+void		print_char(va_list arg, int *arg_len);
+void		print_int(va_list arg, int *arg_len);
+void		print_uint(va_list arg, int *arg_len);
+void		print_str(va_list arg, int *arg_len);
+void		ft_putchar(char c, int *base_len);
+void		ft_putstr(char *s, int *base_len);
+void		ft_putnbr(int n, int *base_len);
+void		ft_putnbr_u(unsigned int n, int *base_len);
+void		ft_putnbr_base_ul(unsigned long n, char *base, int *len);
+void		print_hexa(va_list arg, int *arg_len, char c);
+void		print_address_hexa(va_list arg, int *arg_len);
+int			check_base(char *base);
+void		ft_putnbr_base_u(unsigned int n, char *base, int *len);
+int			ft_printf(const char *format, ...);
 #endif
