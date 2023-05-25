@@ -6,7 +6,7 @@
 /*   By: tjeunet <tjeunet@student.42barcelo>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 16:19:00 by tjeunet           #+#    #+#             */
-/*   Updated: 2023/03/23 12:17:42 by tjeunet          ###   ########.fr       */
+/*   Updated: 2023/05/25 10:02:35 by tjeunet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,4 +104,3 @@ void	ft_putnbr_base_ul(unsigned long n, char *base, int *len)
 			return ;
 	}
 }
-
