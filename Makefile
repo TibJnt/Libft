@@ -27,15 +27,15 @@ CFLAGS = -Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(AR) -rcs $(NAME) $(OBJS)
+	@$(AR) -rcs $(NAME) $(OBJS)
 
 -include $(DEPS)
 
 bonus: $(BNUS)
 
 $(BNUS): $(OBJS) $(OBJS_BONUS)
-	$(AR) -rcs $(NAME) $(OBJS) $(OBJS_BONUS)
-	 
+	@$(AR) -rcs $(NAME) $(OBJS) $(OBJS_BONUS)
+
 
 -include $(DEPS_BONUS)
 
